@@ -1,10 +1,11 @@
 <%- include("header") -%>
 
-  <div class="box" id="heading">
-    <h1> <%= listTitle %> </h1>
-  </div>
-
   <div class="box">
+
+    <div class="container" id="heading">
+      <h1> <%= listTitle %> </h1>
+    </div>
+    
 
     <!-- Part responsible for adding a paragraph element with item.name and div around it for each entry in the newListItems array, and also adding a form and checkbox as well as onChange to submit the checkbox for each entry -->
     <% newListItems.forEach(function(item){ %>
@@ -25,6 +26,11 @@
         <button type="submit" name="list" value="<%= listTitle %>">+</button>
       </form>
   </div>
+
+
+
+  
+ 
 
 
 <%- include("footer") -%>
